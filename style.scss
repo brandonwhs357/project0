@@ -1,0 +1,29 @@
+$text-background-color:lightseagreen;
+$border-details: 2px solid black;
+$padding: 30px;
+$padding2: 5px;
+
+/* Education Page SCSS Styles */
+#profile-content-wrapper{
+  padding: $padding;
+      #profile-content-wrapper h1{
+          color: $text-background-color;
+      }
+
+      #profile-content-wrapper table{
+      border: $border-details;
+      width: 50%;
+      }
+
+      #profile-content-wrapper th, td{
+      @extend #profile-content-wrapper table;
+      text-align: center;
+      border-collapse: collapse;
+      padding: $padding2;
+      }
+
+      #profile-content-wrapper th{
+        padding: $padding2;
+        background-color: lightgray;
+      }
+}

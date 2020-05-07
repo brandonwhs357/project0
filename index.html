@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>My Webpage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.scss">
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="adventures.html">Adventures</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="workhistory.html" >Work History</a>
+                </div>
+
+            </div>
+
+          <div class = "right-side">
+              <div class="brand">
+                  <div>BRANDON GONZALEZ</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <div  class="portfolio-items-wrapper">
+              <div  class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/nintendo.jpg)"></div>
+
+                  <div class="img-text-wrapper">
+                      <div class="logo-wrapper">
+
+                      </div>
+
+                      <div class="subtitle">
+                      I grew up playing Nintendo since I was 6 years old and fell in love with their style of gaming.
+                      </div>
+                  </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/scenery.jpg)"></div>
+
+                      <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+
+                          </div>
+
+                          <div class="subtitle">
+                            I enjoy taking photos of people, objects, and sceneries on my iPhone 11.
+                          </div>
+                      </div>
+                  </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/macbook2.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+
+                              </div>
+
+                              <div class="subtitle">
+                                I am a huge Apple fan and recently just bought a brand-new Macbook Pro.
+                              </div>
+                      </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/oatmeal.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+
+                              </div>
+
+                              <div class="subtitle">
+                                Interestingly enough, my favorite toppings on oatmeal are: Bananas, Blueberries, Strawberries & Protein Powder.
+                              </div>
+                      </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/puppy.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+
+                              </div>
+
+                              <div class="subtitle">
+                              COVID-19 has been giving me puppy fever lately. I might be thinking of getting a dog real soon.
+                              </div>
+                      </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/pokemon.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+
+                              </div>
+
+                              <div class="subtitle">
+                                A glimpse of my Amiibo collection I've spent the last 3 years & $700+ building.
+                              </div>
+                      </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                      <div class="portfolio-img-background" style="background-image:url(images/mexico.jpg)"></div>
+
+                          <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+
+                              </div>
+
+                              <div class="subtitle">
+                                My Mexican culture is very important to me and I am proud of where I come from.
+                              </div>
+                      </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/cliff.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+
+                    <div class="subtitle">
+                        Hiking for various hours and getting rewarded with beautiful views are my favorite.
+                    </div>
+                  </div>
+              </div>
+
+              <div  class="portfolio-item-wrapper">
+                  <div class="portfolio-img-background" style="background-image:url(images/waterfall.jpg)"></div>
+
+                  <div class="img-text-wrapper">
+                      <div class="logo-wrapper">
+
+                      </div>
+
+                      <div class="subtitle">
+                        I almost got stranded trying to visit Multnomah Falls but it was worth the risk.
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</body>
+<script>
+    const portfolioItems    = document.querySelectorAll ('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+              console.log(portfolioItem.childNodes[1].classList);
+              portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout',() => {
+              portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+</script>
+</html>
